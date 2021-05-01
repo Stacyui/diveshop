@@ -1,0 +1,1012 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: roboto,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 30px;
+}
+
+.container h3 {
+  font-family: roboto,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.container p {
+  font-family: roboto, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo-header {
+  padding: 10px 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+header nav ul a {
+  margin: 0px 40px;
+  font-family: roboto, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+header nav ul a:hover {
+  color: white;
+  background-color: #1c1c1c;
+  padding: 5px 10px;
+}
+
+.ocean-background {
+  width: 100%;
+  height: 2400px;
+  background-image: url(../Images/3main_snorkeling.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.intro-text {
+  height: 1300px;
+}
+
+.intro-text h3 {
+  color: white;
+  padding: 350px 200px 150px;
+  text-shadow: 5px 5px 5px #1c1c1c ;
+}
+
+.intro-text a {
+  color: white;
+  text-shadow: 5px 5px 5px #1c1c1c;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn:hover {
+  font-weight: bold;
+}
+
+#book_now_button {
+  font-family: roboto,sans-serif;
+  padding: 30px;
+  margin: 0px 200px;
+  font-size: 20px;
+  background-color: #e46600;
+  color: white;
+  text-shadow: none;
+}
+
+#book_now_button:hover {
+  background-color: #6e6e6e;
+  color: #1c1c1c;
+}
+
+#lang-header {
+  background-color: #1c1c1c;
+  color: white;
+  border: unset;
+}
+
+/* location */
+
+#location {
+  width: 100%;
+  height: 1100px;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+.kume-location h2 {
+  padding: 200px 500px 100px;
+}
+
+.kume-location h3 {
+  padding-left: 250px;
+  color: #7b7b7b;
+}
+
+.kume-location p {
+  padding: 30px 310px;
+  font-size: 24px;
+  color: #7b7b7b;
+}
+
+/* /location */
+
+/* tours */
+#tours {
+  width: 100%;
+  height: 600px;
+}
+
+#tours .container {
+  display: flex;
+  justify-content: center;
+}
+
+#tours-text h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: roboto,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 30px;
+}
+
+.tour-info {
+  border: 5px solid #1c1c1c;
+  float: left;
+  transform: rotate(45deg);
+  margin: 70px 10px;
+  color: white;
+}
+
+.tour-info h3 {
+  font-family: roboto,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+#kayak,
+#snorkeling {
+  position: relative;
+  overflow: hidden;
+  width: 240px;
+  height: 240px;
+}
+
+#diving {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+}
+
+#kayak::before {
+  content: "";
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  z-index: -1;
+  background-image: url(../Images/kayak.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: translate(-80px, -60px) rotate(-45deg);
+}
+
+#diving::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  z-index: -1;
+  background-image: url(../Images/scubadiving.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: translate(-80px, -80px) rotate(-45deg);
+}
+
+
+#snorkeling::before {
+  content: "";
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  z-index: -1;
+  background-image: url(../Images/snorkeling.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: translate(-80px, -60px) rotate(-45deg);
+}
+/* /tours */
+
+/* why choose us */
+#why-choose-us {
+  height: 600px;
+  margin-top: 80px;
+}
+
+.our-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.column {
+  width: 30%;
+  text-align: center;
+}
+
+.column img {
+  width: 140px;
+}
+
+.column h3,
+.column p {
+  padding: 20px;
+}
+/* /why choose us */
+
+/* home - photo garllery */
+#photo-gallery {
+  height: 600px;
+  background-image: url(../Images/lopez-robin-apax4M-4kFI-unsplash.jpg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photo-container {
+  height: 600px;
+}
+
+.photos-right {
+  display: flex;
+  /* padding: 0px 100px 60px 700px; */
+  justify-content: flex-end;
+  margin-right: 70px;
+}
+
+.photos-right img {
+  margin: 0px 50px;
+}
+
+.photos-right a {
+  text-decoration: none;
+}
+
+.image-div {
+  position: relative;
+  background-image: url(../Images/travellers_photo_4.png);
+  background-repeat: no-repeat;
+  background-size: 220px;
+  width: 228px;
+  height: 229px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-div::before {
+  content: "";
+  background-image: url(../Images/photo-camera.png);
+  background-size: 100%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 1;
+}
+
+.image-div p {
+  font-family: roboto,sans-serif;
+  font-size: 15px;
+  color: white;
+  padding-top: 50px;
+}
+
+.photos-left {
+  margin: 0px 230px;
+  display: flex;
+}
+
+.photos-left img {
+  padding-left: 60px;
+}
+
+.photo-d {
+  filter: brightness(60%);
+}
+
+.photos {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+.photos h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: roboto,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 30px;
+}
+/* / home - photo gallery */
+
+/* menu */
+#menu {
+  height: 300px;
+}
+
+.form-control.is-opaque {
+  border: 3px solid #1c1c1c;
+  padding: 10px 30px;
+}
+
+.site-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 45px;
+}
+
+.menu-tour {
+  margin-left: 550px;
+}
+
+.menu-tour ul {
+  list-style: none;
+}
+
+.site-menu h3,
+.site-menu ul li {
+  padding: 10px;
+}
+
+.menu-tour a,
+.other-menu a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+.other-menu a {
+  padding: 10px;
+}
+
+.other-menu {
+  display: flex;
+  flex-direction: column;
+}
+/* /menu */
+
+/* footer */
+footer {
+  background-color: #1c1c1c;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo-footer {
+  padding: 10px 20px;
+}
+
+.sns-logos {
+  text-align: right;
+  padding-right: 200px;
+}
+
+.sns-logos img {
+  padding: 20px;
+}
+
+/* /footer */
+
+/* reservation */
+.header-b {
+  background-color: #1c1c1c;
+}
+
+.header-b header nav ul li a {
+  color: white;
+}
+
+.section-explanation p {
+  text-align: center;
+  padding: 40px;
+}
+
+.tour-list {
+  height: 500px;
+  margin-bottom: 40px;
+}
+
+.tour-list h2 {
+  color: #08476f;
+  padding: 10px;
+}
+
+.res-tour img {
+  width: 400px;
+}
+
+.res {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px 200px;
+}
+
+.res h3 {
+  font-size: 30px;
+}
+
+.res-tour.left {
+  margin-top: 30px;
+}
+
+.res-tour.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.res-tour.right .res-detail {
+  font-size: 20px;
+}
+
+#res-detail-submit input {
+  background-color: #9b308c;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: unset;
+}
+
+/* contact us */
+#contact-us {
+  background-image: url(../Images/contact_image.jpg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+form {
+  height: 800px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.column-b {
+  width: 40%;
+  padding-top: 30px;
+}
+
+.column-b h3,
+.column-b p {
+  text-align: left;
+  padding: 20px;
+}
+
+.form-group {
+  margin: 20px 30px;
+}
+
+.form-group input {
+  height: 30px;
+  width: 200px;
+  border: 3px solid white;
+  background-color:  rgba(241, 241, 241, 0.4);
+  color: #1c1c1c;
+}
+
+.form-group textarea {
+  height: 300px;
+  width: 500px;
+  border: 3px solid white;
+  background-color:  rgba(241, 241, 241, 0.4);
+}
+
+.form-control {
+  color: #1c1c1c;
+}
+
+.contact-button {
+  margin: 10px 271px;
+}
+
+#contact_message_button {
+  padding: 10px 100px;
+  background-color: rgb(228, 102, 0);
+  color: white;
+}
+
+/* /contact us */
+
+/* about us */
+#about_us {
+  height: 300px;
+}
+
+#about_us p {
+  padding: 0px 40px;
+  text-align: center;
+}
+
+#our-office {
+  height: 600px;
+  margin: 50px;
+}
+
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.location p {
+  padding: 10px 80px;
+  font-size: 25px;
+}
+
+.location img {
+  width: 50%;
+  height: 500px;
+}
+
+#our-project {
+  height: 1000px;
+}
+
+#our-project h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: roboto,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 30px;
+}
+
+#our-project p {
+  font-family: roboto, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+
+#project_img {
+  transform: translate(-30px, 30px);
+}
+
+.project-info {
+  margin: 0px 100px 0px 150px;
+}
+
+.project-info img {
+  width: 300px;
+}
+
+.project-info p {
+  text-align: right;
+  float: right;
+}
+
+.donation {
+  text-align: center;
+  padding: 70px 50px 50px;
+}
+
+.donation p {
+  padding: 30px;
+}
+
+#donation_button {
+  background-color: #6aa6e4;
+  padding: 15px 70px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+#donation_button .btn:hover {
+  background-color: #2987e6;
+}
+/* /about us */
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  /* home */
+  .ocean-background {
+    width: 100%;
+    height: 510px;
+  }
+
+  .nav-logo-header img {
+    width: 80px;
+  }
+
+  header nav ul {
+    padding: unset;
+  }
+
+  header nav ul a {
+    font-size: 7px;
+    margin: 0px 5px;
+  }
+
+  .container h2 {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .container h3 {
+    font-size: 10px;
+    padding: 7px;
+  }
+
+  .container p {
+    font-size: 7px;
+    padding: 5px;
+  }
+
+  .intro-text {
+    height: 250px;
+    position: relative;
+  }
+
+  .intro-text h3 {
+    padding: 10px;
+  }
+
+  .intro-text a {
+    font-size: 13px;
+  }
+
+  #book_now_button {
+    margin: 10px 30px;
+    padding: 5px 20px;
+    font-size: 20px;
+    position: absolute;
+    transform: translate(55px, 0px);
+  }
+
+  #location {
+    height: 200px;
+  }
+
+  .kume-location h2 {
+    padding: 5px;
+  }
+  
+  .kume-location h3 {
+    padding: 0px 50px;
+  }
+
+  .kume-location p {
+    padding: 3px 60px;
+  }
+
+  /* main */
+  main {
+    width: 100%;
+  }
+
+  /* home - tours */
+  #tours {
+    height: 150px;
+  }
+
+  #tours-text h2 {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .why-choose-us {
+    height: 300px;
+  }
+
+  #kayak,
+  #snorkeling {
+    height: 60px;
+    width: 60px;
+  }
+
+  #diving {
+    width: 80px;
+    height: 80px;
+  }
+
+  #kayak::before,
+  #snorkeling::before {
+    width: 90px;
+    height: 90px;
+    transform: translate(-15px, -10px) rotate(-45deg);
+  }
+
+  #diving::before {
+    width: 130px;
+    height: 130px;
+    transform: translate(-28px, -15px) rotate(-45deg);
+  }
+  
+  /* home - why choose us */
+  #why-choose-us {
+    height: 500px;
+  }
+
+  .our-info {
+    display: unset;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .column img {
+    width: 80px;
+  }
+
+  .column h3,
+  .column p {
+    padding: 5px;
+  }
+
+  #photo-gallery {
+    background-size: cover;
+    height: 300px;
+  }
+
+  .photos {
+    height: 300px;
+  }
+
+  .photos h2 {
+    font-size: 15px;
+  }
+
+  .photos-left {
+    margin: 0 20px;
+  }
+
+  .photos-left img {
+    width: 70px;
+    padding: 5px;
+  }
+
+  .photos-right {
+    padding: 10px 10px 10px 170px;
+    margin-right: 20px;
+  }
+
+  .photos-right img {
+    width: 80px;
+    margin-right: 20px;
+  }
+
+  .image-div {
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+  }
+
+  .image-div p {
+    font-size: 10px;
+  }
+
+  #menu {
+    height: 230px;
+  }
+
+  .form-control.is-opaque  {
+    padding: 1px 3px;
+    font-size: 7px;
+    margin: 5px;
+  }
+
+  .site-menu {
+    display: unset;
+    margin: 20px;    
+  }
+
+  .menu-tour {
+    margin-left: unset;
+  }
+
+  .menu-tour a,
+  .other-menu a {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .site-menu ul li {
+    padding: 3px 15px;
+    font-size: 7px;
+  }
+
+  footer {
+    width: 100%;
+    height: 100px;
+  }
+
+  .nav-logo-footer img {
+    width: 80px;
+  }
+
+  .sns-logos {
+    padding: 5px;
+  }
+  
+  .sns-logos img {
+    width: 30px;
+    padding: 5px;
+  }
+  /* /home */
+
+  /* reservation */
+  #reservation {
+    width: 100%;
+  }
+
+  .res {
+    display: unset;
+    margin: unset;
+  }
+
+  .section-explanation p {
+    padding: 20px 5px 0px;
+  }
+
+  .tour-list {
+    margin: 20px 0px;
+  }
+
+  .tour-list h2 {
+    font-size: 20px;
+  }
+
+  .res-text h3 {
+    font-size: 18px;
+  }
+
+  .res-tour img {
+    width: 100%;
+  }
+
+  .res-detail label,
+  .res-detail input,
+  .res-detail select {
+    font-size: 10px;
+  }
+
+  #res-detail-date,
+  #res-detail-gnum,
+  #res-detail-submit {
+    padding: 5px 10px;
+  }
+  /* /reservation */
+
+  /* about us */
+  .about-us-page {
+  width: 100%;
+  }
+
+  #about_us {
+    height: 150px;
+    margin: 20px 5px;
+  }
+
+  .location img {
+    width: 70%;
+    height: 130px;
+  }
+
+  #our-office {
+    margin: 20px;
+    height: 200px;
+  }
+
+  #our-project {
+    height: 450px;
+  }
+
+  #our-project h2 {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  #our-project p {
+    font-size: 7px;
+  }
+
+  .project-info {
+    margin: 0px 20px;
+  }
+
+  .project-info p {
+    text-align: unset;
+    float: unset;
+    padding: 10px;
+  }
+
+  .project-info img {
+    width: 40%;
+  }
+
+  .donation {
+    padding: 20px 0px;
+  }
+
+  .donation p {
+    padding: 30px 30px 0px;
+  }
+
+  .donation a {
+    font-size: 10px;
+  }
+
+  #donation_button {
+    padding: 5px 10px;
+  }
+  /* /about us */
+
+  /* contact us */
+  .row {
+    height: 400px;
+  }
+  form {
+    width: 40%;
+    height: 400px;
+  }
+
+  .form-group {
+    margin: 0;
+  }
+
+  .form-group h3 {
+    font-size: 7px;
+  }
+
+  .form-group input {
+    width: 100px;
+    height: 15px;
+  }
+
+  .form-group textarea {
+    width: 150px;
+    height: 100px;
+    font-size: 80%;
+    color: #1c1c1c;
+  }
+
+  .contact-button {
+    margin: 10px 0px;
+  }
+
+  #contact_message_button {
+    padding: 3px 20px;
+    font-size: 10px;
+  }
+
+  #contact-us {
+    background-size: cover;
+  }
+  /* /contact us */
+}
