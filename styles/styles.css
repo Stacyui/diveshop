@@ -803,6 +803,7 @@ form {
 
   .photos-right img {
     width: 80px;
+    height: 80px;
     margin-right: 20px;
   }
 
