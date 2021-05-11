@@ -693,7 +693,7 @@ form {
   }
 
   .kume-location {
-    margin: 50px 10px;
+    margin: 70px 10px;
   }
 
   .kume-location h2 {
@@ -793,6 +793,7 @@ form {
 
   .photos-left img {
     width: 70px;
+    height: 70px;
     padding: 5px;
   }
 
@@ -802,6 +803,7 @@ form {
 
   .photos-right img {
     width: 80px;
+    height: 80px;
     margin-right: 20px;
   }
 
@@ -972,12 +974,6 @@ form {
   /* /about us */
 
   /* contact us */
-  .row {
-    height: 600px;
-    display: unset;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
   .column-b {
     padding: 20px;
     width: 100%;
