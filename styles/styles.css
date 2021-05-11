@@ -974,12 +974,6 @@ form {
   /* /about us */
 
   /* contact us */
-  .row {
-    height: 600px;
-    display: unset;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
   .column-b {
     padding: 20px;
     width: 100%;
