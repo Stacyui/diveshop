@@ -98,9 +98,9 @@ header nav ul a:hover {
 
 #book_now_button {
   font-family: roboto,sans-serif;
-  padding: 30px;
+  padding: 20px 50px;
   margin: 0px 200px;
-  font-size: 20px;
+  font-size: 25px;
   background-color: #e46600;
   color: white;
   text-shadow: none;
@@ -353,7 +353,7 @@ header nav ul a:hover {
 }
 
 .form-control.is-opaque {
-  border: 3px solid #1c1c1c;
+  border: 1.5px solid #1c1c1c;
   padding: 10px 30px;
 }
 
@@ -684,7 +684,7 @@ form {
   }
 
   #book_now_button {
-    margin: 20px 70px;
+    margin: 20px;
     padding: 5px 20px;
     font-size: 20px;
     position: absolute;
@@ -923,7 +923,7 @@ form {
 
   .location img {
     width: 70%;
-    height: 130px;
+    height: 150px;
   }
 
   #our-office {
